@@ -10,13 +10,13 @@
     <meta content="Mannatthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="<?= base_url()?>/assets/images/favicon.ico">
 
-    <link href="assets/plugins/morris/morris.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/plugins/morris/morris.css" rel="stylesheet">
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url()?>/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url()?>/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url()?>/assets/css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -43,7 +43,7 @@
             <div class="topbar-left">
                 <div class="text-center">
                     <a href="index.html" class="logo"><i class="mdi mdi-assistant"></i> SIRS</a>
-                    <!-- <a href="index.html" class="logo"><img src="assets/images/logo.png" height="24" alt="logo"></a> -->
+                    <!-- <a href="index.html" class="logo"><img src="<?= base_url()?>/assets/images/logo.png" height="24" alt="logo"></a> -->
                 </div>
             </div>
 
@@ -77,13 +77,13 @@
                             <!-- language-->
                             <li class="list-inline-item dropdown notification-list hide-phone">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    Indonesian <img src="assets/images/flags/indonesia_flag.png" class="ml-2" height="16" alt="" />
+                                    Indonesian <img src="<?= base_url()?>/assets/images/flags/indonesia_flag.png" class="ml-2" height="16" alt="" />
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right language-switch">
-                                    <a class="dropdown-item" href="#"><img src="assets/images/flags/us_flag.jpg" alt="" height="16" /><span> English </span></a>
-                                    <a class="dropdown-item" href="#"><img src="assets/images/flags/french_flag.jpg" alt="" height="16" /><span> French </span></a>
-                                    <a class="dropdown-item" href="#"><img src="assets/images/flags/spain_flag.jpg" alt="" height="16" /><span> Spanish </span></a>
-                                    <a class="dropdown-item" href="#"><img src="assets/images/flags/russia_flag.jpg" alt="" height="16" /><span> Russian </span></a>
+                                    <a class="dropdown-item" href="#"><img src="<?= base_url()?>/assets/images/flags/us_flag.jpg" alt="" height="16" /><span> English </span></a>
+                                    <a class="dropdown-item" href="#"><img src="<?= base_url()?>/assets/images/flags/french_flag.jpg" alt="" height="16" /><span> French </span></a>
+                                    <a class="dropdown-item" href="#"><img src="<?= base_url()?>/assets/images/flags/spain_flag.jpg" alt="" height="16" /><span> Spanish </span></a>
+                                    <a class="dropdown-item" href="#"><img src="<?= base_url()?>/assets/images/flags/russia_flag.jpg" alt="" height="16" /><span> Russian </span></a>
                                 </div>
                             </li>
                             <li class="list-inline-item dropdown notification-list">
@@ -99,19 +99,19 @@
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <div class="notify-icon"><img src="assets/images/users/avatar-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <div class="notify-icon"><img src="<?= base_url()?>/assets/images/users/avatar-2.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
                                         <p class="notify-details"><b>Rina Trimurti</b><small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
                                     </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <div class="notify-icon"><img src="assets/images/users/avatar-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <div class="notify-icon"><img src="<?= base_url()?>/assets/images/users/avatar-3.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
                                         <p class="notify-details"><b>Muhamad Indra Salmi</b><small class="text-muted">You have 87 unread messages</small></p>
                                     </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <div class="notify-icon"><img src="assets/images/users/avatar-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
+                                        <div class="notify-icon"><img src="<?= base_url()?>/assets/images/users/avatar-4.jpg" alt="user-img" class="img-fluid rounded-circle" /> </div>
                                         <p class="notify-details"><b>Muhammad Rayhan</b><small class="text-muted">It is a long established fact that a reader will</small></p>
                                     </a>
 
@@ -162,7 +162,7 @@
 
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="assets/images/users/Bibil.png" alt="user" class="rounded-circle">
+                                    <img src="<?= base_url()?>/assets/images/users/Bibil.png" alt="user" class="rounded-circle">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                     <!-- item-->
@@ -231,26 +231,26 @@
 
 
     <!-- jQuery  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/modernizr.min.js"></script>
-    <script src="assets/js/detect.js"></script>
-    <script src="assets/js/fastclick.js"></script>
-    <script src="assets/js/jquery.slimscroll.js"></script>
-    <script src="assets/js/jquery.blockUI.js"></script>
-    <script src="assets/js/waves.js"></script>
-    <script src="assets/js/jquery.nicescroll.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="<?= base_url()?>/assets/js/jquery.min.js"></script>
+    <script src="<?= base_url()?>/assets/js/popper.min.js"></script>
+    <script src="<?= base_url()?>/assets/js/bootstrap.min.js"></script>
+    <script src="<?= base_url()?>/assets/js/modernizr.min.js"></script>
+    <script src="<?= base_url()?>/assets/js/detect.js"></script>
+    <script src="<?= base_url()?>/assets/js/fastclick.js"></script>
+    <script src="<?= base_url()?>/assets/js/jquery.slimscroll.js"></script>
+    <script src="<?= base_url()?>/assets/js/jquery.blockUI.js"></script>
+    <script src="<?= base_url()?>/assets/js/waves.js"></script>
+    <script src="<?= base_url()?>/assets/js/jquery.nicescroll.js"></script>
+    <script src="<?= base_url()?>/assets/js/jquery.scrollTo.min.js"></script>
 
-    <script src="assets/plugins/skycons/skycons.min.js"></script>
-    <script src="assets/plugins/raphael/raphael-min.js"></script>
-    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="<?= base_url()?>/assets/plugins/skycons/skycons.min.js"></script>
+    <script src="<?= base_url()?>/assets/plugins/raphael/raphael-min.js"></script>
+    <script src="<?= base_url()?>/assets/plugins/morris/morris.min.js"></script>
 
-    <script src="assets/pages/dashborad.js"></script>
+    <script src="<?= base_url()?>/assets/pages/dashborad.js"></script>
 
     <!-- App js -->
-    <script src="assets/js/app.js"></script>
+    <script src="<?= base_url()?>/assets/js/app.js"></script>
     <script>
         /* BEGIN SVG WEATHER ICON */
         if (typeof Skycons !== 'undefined') {

@@ -12,6 +12,10 @@
         <div class="alert alert-info"> Selamat datang di sistem informasi Rumah Sakit Arafah</div>
         </p>
     </div>
+    <div class="card-body">
+        <p class="card-text">Ada yang bisa kami bantu?, kami siap membantu dan melayani kebutuhan anda 😊</p>
+        <p class="card-text">Kami menyediakan berbagai layanan untuk membantu anda dalam menangani masalah kesehatan anda</p>
+    </div>
 </div>
 
 <?= $this->endsection('') ?>

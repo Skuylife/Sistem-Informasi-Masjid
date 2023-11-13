@@ -14,8 +14,8 @@
     <ul class="list-unstyled">
         <li><a href="advanced-highlight.html">Dokter</a></li>
         <li><a href="advanced-rating.html">Pasien</a></li>
-        <li><a href="advanced-alertify.html">Alertify</a></li>
-        <li><a href="advanced-rangeslider.html">Range Slider</a></li>
+        <li><a href="advanced-alertify.html">Perawat</a></li>
+        <li><a href="advanced-rangeslider.html">Staff</a></li>
     </ul>
 </li>
 
@@ -24,7 +24,7 @@
     <ul class="list-unstyled">
         <li><a href="advanced-highlight.html">Rawat Inap</a></li>
         <li><a href="advanced-rating.html">Rawat Jalan</a></li>
-
+        <li><a href="advanced-rating.html">Konsultasi</a></li>
     </ul>
 </li>
 <?= $this->endsection('') ?>
