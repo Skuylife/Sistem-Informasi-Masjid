@@ -91,8 +91,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="col-md-10">
-                        <label for="iduser">ID User</label>
-                        <input type="text" class="form-control" name="id" id="iduser">
+                        <input type="hidden" class="form-control" name="id" id="iduser">
                     </div>
                     <div class="col-md-10">
                         <label for="nmuser">Nama User</label>
