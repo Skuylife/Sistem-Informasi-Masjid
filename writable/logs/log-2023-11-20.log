@@ -64,3 +64,88 @@ WHERE `id` IS NULL', [], false)
  6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+ERROR - 2023-11-20 10:29:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_masjid_21200...', 3306, '', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\ModelPengurus.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\ModelPengurus.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#10 {main}
+CRITICAL - 2023-11-20 10:29:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pengurus`', [], false)
+ 3 APPPATH\Models\ModelPengurus.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+ERROR - 2023-11-20 11:38:51 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_pen...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pen...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pen...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pen...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\ModelPengurus.php(23): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Pengurus.php(40): App\Models\ModelPengurus->updateData(Array, NULL)
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Pengurus->edit()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2023-11-20 11:38:51 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pengurus` SET `id_pengurus` = :id_pengurus:', [...], false)
+ 2 APPPATH\Models\ModelPengurus.php(23): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Pengurus.php(40): App\Models\ModelPengurus->updateData([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+CRITICAL - 2023-11-20 11:40:15 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2520.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2454): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\ModelPengurus.php(23): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Pengurus.php(40): App\Models\ModelPengurus->updateData([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+CRITICAL - 2023-11-20 11:40:29 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2520.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2454): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\ModelPengurus.php(23): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Pengurus.php(40): App\Models\ModelPengurus->updateData([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')

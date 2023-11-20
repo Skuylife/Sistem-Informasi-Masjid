@@ -18,9 +18,16 @@ class ModelPengurus extends Model
         
     }
 
+    public function updateData($data,$id)
+    {
+        $query = $this->db->table('tbl_pengurus')->update($data, ['id_pengurus' => $id]);
+        // where(['id_pengurus' => $id])->set($data)->update();
+        return $query;
+    }
+
     public function deletepengurus($id)
     {
-        $query = $this->db->table('tbl_pengurus')->delete(array('id_pengurus' =>$id));
+        $query = $this->db->table('tbl_pengurus')->delete(['id_pengurus' =>$id]);
         return $query;
     }
 }

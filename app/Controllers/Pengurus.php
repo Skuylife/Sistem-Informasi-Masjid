@@ -27,6 +27,21 @@ class Pengurus extends BaseController
         return redirect()->to('/pengurus');
     }
 
+    public function edit()
+    {
+        $model = new ModelPengurus();
+        $id = $this->request->getPost('idp');
+        $data = [
+            'nama_pengurus' => $this->request->getPost('namapengurus'),
+            'jabatan' => $this->request->getPost('jabatan'),
+            'alamat' => $this->request->getPost('alamat'),
+            'no_hp' => $this->request->getPost('nohp')
+        ];
+        $model->updateData($data,$id);
+        return redirect()->to('/pengurus');
+
+    }
+
     public function delete()
     {
         $model = new ModelPengurus();
