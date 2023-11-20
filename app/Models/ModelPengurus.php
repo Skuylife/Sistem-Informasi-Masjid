@@ -11,4 +11,16 @@ class ModelPengurus extends Model
         $builder = $this->db->table('tbl_pengurus');
         return $builder->get();
     }
+
+    public function insertData($data) 
+    {
+        $this->db->table('tbl_pengurus')->insert($data);
+        
+    }
+
+    public function deletepengurus($id)
+    {
+        $query = $this->db->table('tbl_pengurus')->delete(array('id_pengurus' =>$id));
+        return $query;
+    }
 }

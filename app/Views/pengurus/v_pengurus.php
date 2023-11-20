@@ -63,7 +63,7 @@
                                                         <button type="button" class="btn btn-info btn-sm btn-edit">
                                                             <i class=" fa fa-tags"></i>
                                                         </button>
-                                                        <button type="button" class="btn btn-danger btn-sm btn-delete">
+                                                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id_pengurus="<?= $val['id_pengurus']; ?>">
                                                             <i class="fa fa-trash"></i>
                                                         </button>
                                                     </td>
@@ -80,8 +80,76 @@
         </div>
     </div>
 </div>
+
+<!-- Modal -->
+<form action="/pengurus/save" method="post">
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-10">
+                        <label for="idpgrs">ID Pengurus</label>
+                        <input type="text" class="form-control" name="id" id="idpgrs">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="nama">Nama Pengurus</label>
+                        <input type="text" class="form-control" name="namapengurus" id="namapgrs">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="jabatan">Jabatan</label>
+                        <input type="text" class="form-control" name="jabatan" id="jabatan">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="alamat">Alamat</label>
+                        <input type="text" class="form-control" name="alamat" id="alamat">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="nohp">No HP</label>
+                        <input type="text" class="form-control" name="nohp" id="nohp">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="/pengurus/delete" method="post">
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 style="color: red;">Apakah Anda Yakin Menghapus Data Ini ?</h3>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="idp" class="id">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
 <script>
     // script delete
+    $('.btn-delete').on('click', function() {
+        const id = $(this).data('id_pengurus');
+        $('.id').val(id);
+        $('#deleteModal').modal('show');
+    });
 
     // script datatable
     $(document).ready(function() {
