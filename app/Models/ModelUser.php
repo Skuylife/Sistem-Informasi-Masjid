@@ -17,7 +17,13 @@ class ModelUser extends Model
         $this->db->table('tbl_user')->insert($data);
     }
 
-    public function deletepengurus($id)
+    public function updateData($data, $id)
+    {
+        $query = $this->db->table('tbl_user')->update($data, ['id_user' => $id]);
+        return $query;
+    }
+
+    public function deleteUser($id)
     {
         $query = $this->db->table('tbl_user')->delete(array('id_user' => $id));
         return $query;

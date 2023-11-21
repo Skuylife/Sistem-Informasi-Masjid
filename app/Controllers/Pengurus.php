@@ -3,18 +3,39 @@
 namespace App\Controllers;
 
 use App\Models\ModelPengurus;
+use CodeIgniter\Validation\Rules as ValidationRules;
+use CodeIgniter\Validation\StrictRules\Rules;
+use PSpell\Config;
 
 class Pengurus extends BaseController
 {
     public function index()
     {
+        session();
         $model = new ModelPengurus();
         $data['pengurus'] = $model->getPengurus()->getResultArray();
         echo view('pengurus/v_pengurus',$data);
+        $data = [
+        'title' => "Tambah Data",
+        'validation' => \Config\Services::validation()
+        ];
     }
 
     public function save()
     {
+        if (!$this->validate([
+            'id' => [
+            'rules' => 'is_unique[tbl_pengurus.id_pengurus]',
+            'errors' => [
+                'is_unique' => '{field} Yang diinputkan sudah ada'
+            ]
+        ]])) {
+            session()->setFlashdata('error',$this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }else{
+            print_r($this->request->getVar());
+        }
+
         $model = new ModelPengurus();
         $data = array (
             'id_pengurus' =>$this->request->getPost('id'),
@@ -23,6 +44,7 @@ class Pengurus extends BaseController
             'alamat' =>$this->request->getPost('alamat'),
             'no_hp' =>$this->request->getPost('nohp')
         );
+
         $model->insertData($data);
         return redirect()->to('/pengurus');
     }
@@ -37,6 +59,7 @@ class Pengurus extends BaseController
             'alamat' => $this->request->getPost('alamat'),
             'no_hp' => $this->request->getPost('nohp')
         ];
+        
         $model->updateData($data,$id);
         return redirect()->to('/pengurus');
 

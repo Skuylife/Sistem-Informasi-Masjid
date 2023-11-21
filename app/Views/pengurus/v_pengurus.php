@@ -12,7 +12,7 @@
     <!-- Required datatable js -->
     <script src="<?= base_url() ?>/assets/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="<?= base_url() ?>/assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-    
+
     <!-- Jquery edit-->
     <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
     <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
@@ -87,7 +87,18 @@
 </div>
 
 <!-- Modal Tambah Data-->
-<form action="/pengurus/save" method="post">
+<form action="/pengurus/save" method="post" autocomplete="off">
+    <?php if (!empty(session()->getFlashdata('error'))) : ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4>Periksa data</h4>
+            <hr>
+            <?= session()->getFlashdata('error') ?>
+            <button type="button" id="addModal" class="btn-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    <?php endif; ?>
     <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -98,23 +109,23 @@
                 <div class="modal-body">
                     <div class="col-md-10">
                         <label for="idpgrs">ID Pengurus</label>
-                        <input type="text" class="form-control" name="id" id="idpgrs">
+                        <input type="text" class="form-control " name="id" id="idpgrs" required>
                     </div>
                     <div class="col-md-10">
-                        <label for="nama">Nama Pengurus</label>
-                        <input type="text" class="form-control" name="namapengurus" id="namapgrs">
+                        <label for="namapgrs">Nama Pengurus</label>
+                        <input type="text" class="form-control" name="namapengurus" id="namapgrs" required>
                     </div>
                     <div class="col-md-10">
                         <label for="jabatan">Jabatan</label>
-                        <input type="text" class="form-control" name="jabatan" id="jabatan">
+                        <input type="text" class="form-control" name="jabatan" id="jabatan" required>
                     </div>
                     <div class="col-md-10">
                         <label for="alamat">Alamat</label>
-                        <input type="text" class="form-control" name="alamat" id="alamat">
+                        <input type="text" class="form-control" name="alamat" id="alamat" required>
                     </div>
                     <div class="col-md-10">
                         <label for="nohp">No HP</label>
-                        <input type="text" class="form-control" name="nohp" id="nohp">
+                        <input type="text" class="form-control" name="nohp" id="nohp" required>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -128,7 +139,7 @@
 <!-- end modal tambah data -->
 
 <!-- Modal edit Data-->
-<form action="/pengurus/edit" method="post">
+<form action="/pengurus/edit" method="post" autocomplete="off">
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -139,23 +150,23 @@
                 <div class="modal-body">
                     <div class="col-md-10">
                         <label for="idpgrs">ID Pengurus</label>
-                        <input type="text" class="form-control idpgrs" name="idp" id="idpgrs" autocomplete="off">
+                        <input type="text" class="form-control idpgrs" name="idp" id="idpgrs" disabled>
                     </div>
                     <div class="col-md-10">
                         <label for="namapgrs">Nama Pengurus</label>
-                        <input type="text" class="form-control nama" name="namapengurus" id="namapgrs" autocomplete="off">
+                        <input type="text" class="form-control nama" name="namapengurus" id="namapgrs" required autofocus>
                     </div>
                     <div class="col-md-10">
                         <label for="jabatan">Jabatan</label>
-                        <input type="text" class="form-control jabatan" name="jabatan" id="jabatan" autocomplete="off">
+                        <input type="text" class="form-control jabatan" name="jabatan" id="jabatan" required>
                     </div>
                     <div class="col-md-10">
                         <label for="alamat">Alamat</label>
-                        <input type="text" class="form-control alamat" name="alamat" id="alamat" autocomplete="off">
+                        <input type="text" class="form-control alamat" name="alamat" id="alamat" required>
                     </div>
                     <div class="col-md-10">
                         <label for="nohp">No HP</label>
-                        <input type="text" class="form-control nohp" name="nohp" id="nohp" autocomplete="off">
+                        <input type="text" class="form-control nohp" name="nohp" id="nohp" required>
                     </div>
                 </div>
                 <div class="modal-footer">

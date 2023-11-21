@@ -26,11 +26,26 @@ class User extends BaseController
         return redirect()->to('/user');
     }
 
+    public function edit()
+    {
+        $model = new ModelUser();
+        $id = $this->request->getPost('id');
+        $data = [
+            'nama_user' => $this->request->getPost('namauser'),
+            'email' => $this->request->getPost('email'),
+            'password' => $this->request->getPost('pass'),
+            'level' => $this->request->getPost('level')
+        ];
+
+        $model->updateData($data, $id);
+        return redirect()->to('/user');
+    }
+
     public function delete()
     {
         $model = new ModelUser();
         $id = $this->request->getPost('idu');
-        $model->deletepengurus($id);
+        $model->deleteUser($id);
         return redirect()->to('/user/index');
     }
 }
