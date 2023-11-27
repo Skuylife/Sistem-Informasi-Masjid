@@ -14,14 +14,28 @@ class User extends BaseController
     }
     public function save()
     {
+        if (!$this->validate([
+            'namauser' => [
+                'rules' => 'is_unique[tbl_user.nama_user]',
+                'errors' => [
+                    'is_unique' => 'Username Yang diinputkan sudah ada'
+                ]
+            ]
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        } else {
+            print_r($this->request->getVar());
+        }
+
         $model = new ModelUser();
-        $data = array(
+        $data = [
             'id_user' => $this->request->getPost('id'),
             'nama_user' => $this->request->getPost('namauser'),
             'email' => $this->request->getPost('email'),
-            'password' => $this->request->getPost('pass'),
+            'password' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
             'level' => $this->request->getPost('level')
-        );
+        ];
         $model->insertData($data);
         return redirect()->to('/user');
     }
@@ -33,7 +47,7 @@ class User extends BaseController
         $data = [
             'nama_user' => $this->request->getPost('namauser'),
             'email' => $this->request->getPost('email'),
-            'password' => $this->request->getPost('pass'),
+            'password' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
             'level' => $this->request->getPost('level')
         ];
 

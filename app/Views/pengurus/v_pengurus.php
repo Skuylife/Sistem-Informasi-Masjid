@@ -150,11 +150,11 @@
                 <div class="modal-body">
                     <div class="col-md-10">
                         <label for="idpgrs">ID Pengurus</label>
-                        <input type="text" class="form-control idpgrs" name="idp" id="idpgrs" disabled>
+                        <input type="text" class="form-control idpgrs" name="idp" id="idpgrs" required >
                     </div>
                     <div class="col-md-10">
                         <label for="namapgrs">Nama Pengurus</label>
-                        <input type="text" class="form-control nama" name="namapengurus" id="namapgrs" required autofocus>
+                        <input type="text" class="form-control nama" name="namapengurus" id="namapgrs" required>
                     </div>
                     <div class="col-md-10">
                         <label for="jabatan">Jabatan</label>

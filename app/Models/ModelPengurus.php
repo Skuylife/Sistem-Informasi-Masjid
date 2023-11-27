@@ -21,7 +21,7 @@ class ModelPengurus extends Model
     public function updateData($data,$id)
     {
         $query = $this->db->table('tbl_pengurus')->update($data, ['id_pengurus' => $id]);
-        // where(['id_pengurus' => $id])->set($data)->update();
+        // where(['id_pengurus' => $id])->set($data)->update();update($data, ['id_pengurus' => $id]);
         return $query;
     }
 

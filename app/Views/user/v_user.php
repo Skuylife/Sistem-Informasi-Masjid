@@ -41,7 +41,6 @@
                                                 <th>No</th>
                                                 <th>Nama User</th>
                                                 <th>Email</th>
-                                                <th>Password</th>
                                                 <th>Level</th>
                                             </tr>
                                         </thead>
@@ -53,7 +52,6 @@
                                                     <td><?= $no; ?></td>
                                                     <td><?= $val['nama_user'] ?></td>
                                                     <td><?= $val['email'] ?></td>
-                                                    <td><?= $val['password'] ?></td>
                                                     <td><?= $val['level'] ?></td>
                                                     <td>
 
@@ -80,6 +78,17 @@
 
 <!-- Modal Tambah Data-->
 <form action="/user/save" method="post" autocomplete="off">
+    <?php if (!empty(session()->getFlashdata('error'))) : ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <h4>Periksa data</h4>
+            <hr>
+            <?= session()->getFlashdata('error') ?>
+            <button type="button" id="addModal" class="btn-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    <?php endif; ?>
     <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
