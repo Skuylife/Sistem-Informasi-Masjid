@@ -41,7 +41,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <table class="table table-sm table-striped" id="datapengurus">
-                                        <thead>
+                                        <thead class="thead-default">
                                             <tr role="row">
                                                 <th>No</th>
                                                 <th>ID</th>
@@ -56,7 +56,7 @@
                                             <?php $no = 0;
                                             foreach ($pengurus as $val) {
                                                 $no++; ?>
-                                                <tr role="row" class="odd">
+                                                <tr role=" row" class="odd table-primary">
                                                     <td><?= $no; ?></td>
                                                     <td><?= $val['id_pengurus'] ?></td>
                                                     <td><?= $val['nama_pengurus'] ?></td>
@@ -65,10 +65,10 @@
                                                     <td><?= $val['no_hp'] ?></td>
                                                     <td>
 
-                                                        <button type="button" class="btn btn-info btn-sm btn-edit" data-id_pengurus="<?= $val['id_pengurus']; ?>" data-nama_pengurus="<?= $val['nama_pengurus']; ?>" data-jabatan="<?= $val['jabatan']; ?>" data-alamat="<?= $val['alamat']; ?>" data-no_hp="<?= $val['no_hp']; ?>">
+                                                        <button type="button" class="btn btn-outline-dark waves-effect waves-light btn-edit" data-id_pengurus="<?= $val['id_pengurus']; ?>" data-nama_pengurus="<?= $val['nama_pengurus']; ?>" data-jabatan="<?= $val['jabatan']; ?>" data-alamat="<?= $val['alamat']; ?>" data-no_hp="<?= $val['no_hp']; ?>">
                                                             <i class=" fa fa-tags"></i>
                                                         </button>
-                                                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id_pengurus="<?= $val['id_pengurus']; ?>">
+                                                        <button type="button" class="btn btn-outline-danger waves-effect waves-light btn-delete" data-id_pengurus="<?= $val['id_pengurus']; ?>">
                                                             <i class="fa fa-trash"></i>
                                                         </button>
                                                     </td>
@@ -150,7 +150,7 @@
                 <div class="modal-body">
                     <div class="col-md-10">
                         <label for="idpgrs">ID Pengurus</label>
-                        <input type="text" class="form-control idpgrs" name="idp" id="idpgrs" required >
+                        <input type="text" class="form-control idpgrs" name="idp" id="idpgrs" required>
                     </div>
                     <div class="col-md-10">
                         <label for="namapgrs">Nama Pengurus</label>

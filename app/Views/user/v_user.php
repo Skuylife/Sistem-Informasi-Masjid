@@ -28,7 +28,7 @@
                     <div class="card-body">
 
                         <div class="col-md-12">
-                            <button type="button" class="btn btn-sm btn-primary" data-target="#addModal" data-toggle="modal">Tambah Data</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-target="#addModal" data-toggle="modal">Tambah Data</button>
                         </div>
                         <br>
                         <div id="datatable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
@@ -55,10 +55,10 @@
                                                     <td><?= $val['level'] ?></td>
                                                     <td>
 
-                                                        <button type="button" class="btn btn-info btn-sm btn-edit" data-id_user="<?= $val['id_user']; ?>" data-nama_user="<?= $val['nama_user']; ?>" data-email="<?= $val['email']; ?>" data-password="<?= $val['password']; ?>" data-level="<?= $val['level']; ?>">
+                                                        <button type="button" class="btn btn-outline-dark btn-sm btn-edit" data-id_user="<?= $val['id_user']; ?>" data-nama_user="<?= $val['nama_user']; ?>" data-email="<?= $val['email']; ?>" data-password="<?= $val['password']; ?>" data-level="<?= $val['level']; ?>">
                                                             <i class=" fa fa-tags"></i>
                                                         </button>
-                                                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id_user="<?= $val['id_user']; ?>">
+                                                        <button type="button" class="btn btn-outline-danger btn-sm btn-delete" data-id_user="<?= $val['id_user']; ?>">
                                                             <i class="fa fa-trash"></i>
                                                         </button>
                                                     </td>
