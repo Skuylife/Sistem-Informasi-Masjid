@@ -14,6 +14,7 @@
     <ul class="list-unstyled">
         <li><a href="<?= site_url('pengurus') ?>">Pengurus</a></li>
         <li><a href="<?= site_url('user') ?>">User</a></li>
+        <li><a href="<?= site_url('agenda') ?>">Agenda</a></li>
     </ul>
 </li>
 

@@ -33,7 +33,7 @@
                     <div class="card-body">
 
                         <div class="col-md-12">
-                            <button type="button" class="btn btn-sm btn-primary" data-target="#addModal" data-toggle="modal">Tambah Data</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-target="#addModal" data-toggle="modal">Tambah Data</button>
                         </div>
                         <br>
                         <div id="datatable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
@@ -66,7 +66,7 @@
                                                     <td>
 
                                                         <button type="button" class="btn btn-outline-dark waves-effect waves-light btn-edit" data-id_pengurus="<?= $val['id_pengurus']; ?>" data-nama_pengurus="<?= $val['nama_pengurus']; ?>" data-jabatan="<?= $val['jabatan']; ?>" data-alamat="<?= $val['alamat']; ?>" data-no_hp="<?= $val['no_hp']; ?>">
-                                                            <i class=" fa fa-tags"></i>
+                                                            <i class=" ion-compose"></i>
                                                         </button>
                                                         <button type="button" class="btn btn-outline-danger waves-effect waves-light btn-delete" data-id_pengurus="<?= $val['id_pengurus']; ?>">
                                                             <i class="fa fa-trash"></i>
@@ -135,7 +135,7 @@
             </div>
         </div>
     </div>
-</form>
+</form>    
 <!-- end modal tambah data -->
 
 <!-- Modal edit Data-->

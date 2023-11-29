@@ -21,3 +21,338 @@ INFO - 2023-11-27 04:48:08 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-27 04:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-27 04:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-27 04:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 05:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:42:38 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Agenda.php(16): CodeIgniter\Model->__call('getagenda', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:44:35 --> Undefined variable $Agenda
+in APPPATH\Views\agenda\v_agenda.php on line 44.
+ 1 APPPATH\Views\agenda\v_agenda.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Agenda', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('agenda/v_agenda', [], true)
+ 5 APPPATH\Controllers\Agenda.php(17): view('agenda/v_agenda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-27 06:46:37 --> mysqli_sql_exception: Table 'db_masjid_2120007.tbl_agenda' doesn't exist in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('b001', 'id_agenda', Array, NULL, 'id')
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('id', 'id', 'b001', Array, Array)
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Agenda.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Agenda->save()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#11 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#14 {main}
+CRITICAL - 2023-11-27 06:46:37 --> Table 'db_masjid_2120007.tbl_agenda' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tbl_agenda`
+WHERE `id_agenda` = :id_agenda:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('b001', 'id_agenda', [...], null, 'id')
+ 4 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('id', 'id', 'b001', [...], [...])
+ 5 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Agenda.php(26): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->save()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:47:24 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Agenda.php(48): CodeIgniter\Model->__call('insertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-27 06:47:32 --> mysqli_sql_exception: Table 'db_masjid_2120007.agenda' doesn't exist in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\Modelagenda.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Agenda.php(16): App\Models\ModelAgenda->getAgenda()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Agenda->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2023-11-27 06:47:32 --> Table 'db_masjid_2120007.agenda' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `agenda`', [], false)
+ 2 APPPATH\Models\Modelagenda.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Agenda.php(16): App\Models\ModelAgenda->getAgenda()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-27 06:47:48 --> mysqli_sql_exception: Table 'db_masjid_2120007.agenda' doesn't exist in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\Modelagenda.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Agenda.php(16): App\Models\ModelAgenda->getAgenda()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Agenda->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2023-11-27 06:47:48 --> Table 'db_masjid_2120007.agenda' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `agenda`', [], false)
+ 2 APPPATH\Models\Modelagenda.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Agenda.php(16): App\Models\ModelAgenda->getAgenda()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-27 06:48:26 --> mysqli_sql_exception: Table 'db_masjid_2120007.btl_agenda' doesn't exist in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\Modelagenda.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Agenda.php(16): App\Models\ModelAgenda->getAgenda()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Agenda->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2023-11-27 06:48:26 --> Table 'db_masjid_2120007.btl_agenda' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `btl_agenda`', [], false)
+ 2 APPPATH\Models\Modelagenda.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Agenda.php(16): App\Models\ModelAgenda->getAgenda()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:49:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Agenda.php(48): CodeIgniter\Model->__call('insertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:52:44 --> Undefined array key "idagenda"
+in APPPATH\Views\agenda\v_agenda.php on line 48.
+ 1 APPPATH\Views\agenda\v_agenda.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idagenda"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('agenda/v_agenda', [], true)
+ 5 APPPATH\Controllers\Agenda.php(17): view('agenda/v_agenda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:52:59 --> Undefined array key "idagenda"
+in APPPATH\Views\agenda\v_agenda.php on line 53.
+ 1 APPPATH\Views\agenda\v_agenda.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idagenda"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('agenda/v_agenda', [], true)
+ 5 APPPATH\Controllers\Agenda.php(17): view('agenda/v_agenda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:53:11 --> Undefined array key "idagenda"
+in APPPATH\Views\agenda\v_agenda.php on line 56.
+ 1 APPPATH\Views\agenda\v_agenda.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idagenda"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php', 56)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\app\\Views\\agenda\\v_agenda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('agenda/v_agenda', [], true)
+ 5 APPPATH\Controllers\Agenda.php(17): view('agenda/v_agenda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:57:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Agenda.php(70): CodeIgniter\Model->__call('deleteagenda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:57:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Agenda.php(70): CodeIgniter\Model->__call('deleteagenda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-27 06:57:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Agenda.php(70): CodeIgniter\Model->__call('deleteagenda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 06:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 06:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-27 07:20:09 --> mysqli_sql_exception: Duplicate entry 'P-000' for key 'PRIMARY' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Models\ModelAgenda.php(17): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\app\Controllers\Agenda.php(48): App\Models\ModelAgenda->insertData(Array)
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(919): App\Controllers\Agenda->save()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-DMasjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2023-11-27 07:20:09 --> Duplicate entry 'P-000' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_agenda` (`id_agenda`, `namakegiatan`, `tgl`, `jam`) VALUES (:id_agenda:, :namakegiatan:, :tgl:, :jam:)', [...], false)
+ 2 APPPATH\Models\ModelAgenda.php(17): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Agenda.php(48): App\Models\ModelAgenda->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Agenda->save()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Agenda))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-DMasjid\\public\\index.php')
+INFO - 2023-11-27 07:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-27 07:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
