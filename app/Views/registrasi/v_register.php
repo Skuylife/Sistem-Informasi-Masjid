@@ -43,34 +43,39 @@
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control <?= ($validation->hasError('emailu'))?'is_invalid' : ''; ?>" type="email" name="emailu" value="<?= set_value('emailu')?>" placeholder="Email">
+                                <input class="form-control <?= ($validation->hasError('emailu')) ? 'is_invalid' : ''; ?>" type="email" name="emailuser" placeholder="Email">
                                 <div class="invalid-feedback">
-                                    <?= $validation->getError('emailu')?>
+                                    <?= $validation->getError('emailu') ?>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control" type="text" name="username" required="" placeholder="Username">
+                                <input class="form-control" type="text" name="username" id="username" required="" placeholder="Username">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control" type="password" name="password" required="" placeholder="Password">
+                                <input class="form-control" type="password" name="password" id="password" required="" placeholder="Password">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control" type="password" name="confirmpassword" required="" placeholder="Confirm Password">
+                                <input class="form-control" type="password" name="confirmpassword" id="confirmpassword" required="" placeholder="Confirm Password">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control" type="text" name="level" required="" placeholder="Level">
+                                <select name="level" id="level" class="form-control" >
+                                    <option value="">Level</option>
+                                    <option value="1">Admin</option>
+                                    <option value="2">Donatur</option>
+                                    <option value="3">Bendahara</option>
+                                </select>
                             </div>
                         </div>
 

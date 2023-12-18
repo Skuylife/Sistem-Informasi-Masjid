@@ -46,16 +46,27 @@
                                         </thead>
                                         <tbody>
                                             <?php $no = 0;
+                                            $model = new App\Models\ModelUser();
+                                            $data = $model->getUser()->getResultArray();
                                             foreach ($user as $val) {
+                                                if ($val['level'] == '1') {
+                                                    $role = 'Admin';
+                                                } elseif ($val['level'] == '2') {
+                                                    $role = 'Donatur';
+                                                } elseif ($val['level'] == '3') {
+                                                    $role = 'Pengurus';
+                                                } elseif ($val['level'] == '4') {
+                                                    $role = 'Pimpinan';
+                                                }
                                                 $no++; ?>
                                                 <tr role="row" class="odd">
                                                     <td><?= $no; ?></td>
                                                     <td><?= $val['nama_user'] ?></td>
                                                     <td><?= $val['email'] ?></td>
-                                                    <td><?= $val['level'] ?></td>
+                                                    <td><?= $role ?></td>
                                                     <td>
 
-                                                        <button type="button" class="btn btn-outline-dark btn-sm btn-edit" data-id_user="<?= $val['id_user']; ?>" data-nama_user="<?= $val['nama_user']; ?>" data-email="<?= $val['email']; ?>" data-password="<?= $val['password']; ?>" data-level="<?= $val['level']; ?>">
+                                                        <button type="button" class="btn btn-outline-dark btn-sm btn-edit" data-id_user="<?= $val['id_user']; ?>" data-nama_user="<?= $val['nama_user']; ?>" data-email="<?= $val['email']; ?>" data-password="<?= $val['password_user']; ?>" data-level="<?= $val['level']; ?>">
                                                             <i class=" fa fa-tags"></i>
                                                         </button>
                                                         <button type="button" class="btn btn-outline-danger btn-sm btn-delete" data-id_user="<?= $val['id_user']; ?>">
@@ -113,8 +124,14 @@
                         <input type="password" class="form-control" name="pass" id="pass" required>
                     </div>
                     <div class="col-md-10">
-                        <label for="nohp">Level</label>
-                        <input type="text" class="form-control" name="level" id="level" required>
+                        <label for="level"> Level </label>
+                        <select name="level" id="level" class="form-control">
+                            <option value="">Pilih Hak Akses</option>
+                            <option value="1">Admin</option>
+                            <option value="2">Donatur</option>
+                            <option value="3">Pengurus</option>
+                            <option value="4">Pimpinan</option>
+                        </select>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -153,8 +170,14 @@
                         <input type="password" class="form-control pass" name="pass" id="pass" required>
                     </div>
                     <div class="col-md-10">
-                        <label for="nohp">Level</label>
-                        <input type="text" class="form-control level" name="level" id="level" required>
+                        <label for="level"> Level </label>
+                        <select name="level" id="level" class="form-control">
+                            <option value="">Pilih Hak Akses</option>
+                            <option value="1">Admin</option>
+                            <option value="2">Donatur</option>
+                            <option value="3">Pengurus</option>
+                            <option value="4">Pimpinan</option>
+                        </select>
                     </div>
                 </div>
                 <div class="modal-footer">

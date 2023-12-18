@@ -31,9 +31,17 @@
                 <h3 class="text-center mt-0 m-b-15">
                     <a href="index.html" class="logo logo-admin"><img src="<?= base_url() ?>/assets/images/logo.png" height="24" alt="logo"></a>
                 </h3>
+                <?php 
+                if (session()->getFlashdata('msg')) : ?>
+                <div class="alert aler-danger">
+                    <?= session()->getFlashdata('msg') ?>
+                </div>
+                <?php 
+                endif; 
+                ?>
 
                 <div class="p-3">
-                    <form class="form-horizontal m-t-20" action="login/ceklogin">
+                    <form class="form-horizontal m-t-20" action="login/ceklogin" method="post">
 
                         <div class="form-group row">
                             <div class="col-12">
@@ -67,7 +75,7 @@
                                 <a href="pages-recoverpw.html" class="text-muted"><i class="mdi mdi-lock"></i> <small>Forgot your password ?</small></a>
                             </div>
                             <div class="col-sm-5 m-t-20">
-                                <a href="pages-register.html" class="text-muted"><i class="mdi mdi-account-circle"></i> <small>Create an account ?</small></a>
+                                <a href="register" class="text-muted"><i class="mdi mdi-account-circle"></i> <small>Create an account ?</small></a>
                             </div>
                         </div>
                     </form>

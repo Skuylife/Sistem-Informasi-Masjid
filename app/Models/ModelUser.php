@@ -23,18 +23,28 @@ class ModelUser extends Model
         return $query;
     }
 
+    public function simpanUserbaru($data)
+    {
+        $query = $this->db->table('tbl_user')->insert($data);
+        return $query;
+    }
+
     public function deleteUser($id)
     {
         $query = $this->db->table('tbl_user')->delete(array('id_user' => $id));
         return $query;
     }
 
-    public function simpan($data){
+    public function simpan($data)
+    {
         $query = $this->db->table('tbl_user')->insert($data);
         return $query;
     }
 
-    public function ceklogin($username) {
-        return $this->db;
+    public function cek_login($username)
+    {
+        return $this->db->table('tbl_user')
+            ->where(array('nama_user' => $username))
+            ->get()->getRowArray();
     }
 }

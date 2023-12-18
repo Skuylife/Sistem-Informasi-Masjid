@@ -30,11 +30,11 @@ class User extends BaseController
 
         $model = new ModelUser();
         $data = [
-            'id_user' => $this->request->getPost('id'),
-            'nama_user' => $this->request->getPost('namauser'),
-            'email' => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
-            'level' => $this->request->getPost('level')
+            'id_user' => $this->request->getVar('id'),
+            'nama_user' => $this->request->getVar('namauser'),
+            'email' => $this->request->getVar('email'),
+            'password_user' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
+            'level' => $this->request->getVar('level')
         ];
         $model->insertData($data);
         return redirect()->to('/user');
@@ -43,12 +43,12 @@ class User extends BaseController
     public function edit()
     {
         $model = new ModelUser();
-        $id = $this->request->getPost('id');
+        $id = $this->request->getVar('id');
         $data = [
-            'nama_user' => $this->request->getPost('namauser'),
-            'email' => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
-            'level' => $this->request->getPost('level')
+            'nama_user' => $this->request->getVar('namauser'),
+            'email' => $this->request->getVar('email'),
+            'password_user' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
+            'level' => $this->request->getVar('level')
         ];
 
         $model->updateData($data, $id);
@@ -62,4 +62,5 @@ class User extends BaseController
         $model->deleteUser($id);
         return redirect()->to('/user/index');
     }
+
 }

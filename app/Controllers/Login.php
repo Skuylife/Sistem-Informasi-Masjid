@@ -8,7 +8,7 @@ class Login extends BaseController
 {
     public function index()
     {
-        echo view('registrasi/v_login');
+        echo view('/registrasi/v_login');
     }
 
     public function ceklogin()
@@ -17,13 +17,14 @@ class Login extends BaseController
         $model = new ModelUser();
         $username = $this->request->getPost('username');
         $password = $this->request->getVar('password');
-        $cek = $model->ceklogin($username);
+        $cek = $model->cek_login($username);
         if ($cek) {
-            $pass = $cek['password'];
-            $verify = password_hash($password,$pass);
-            if ($verify) {
+            $pass = $cek['password_user'];
+            $verify_pass = password_verify($password, $pass);
+            if ($pass = $verify_pass) {
                 session()->set('username',$cek['nama_user']);
-                session()->set('hakaskses',$cek['hak-akses']);
+                session()->set('masuk', true);
+                session()->set('level',$cek['level']);
                 return redirect()->to('/layout');
             }else{
                 $session->setFlashdata('msg','Password Salah');
@@ -33,6 +34,12 @@ class Login extends BaseController
             $session->setFlashdata('msg', 'Username tidak ditemukan');
             return redirect()->to('/login');
         }
+    }
+
+    public function logout() {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/login');
     }
 
 }

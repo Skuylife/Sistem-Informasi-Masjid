@@ -25,7 +25,7 @@ class Pengurus extends BaseController
     {
         if (!$this->validate([
             'id' => [
-            'rules' => 'is_unique[tbl_pengurus.id_pengurus]',
+            'rules' => 'is_unique[tbl_pengurus.id_kas_masuk]',
             'errors' => [
                 'is_unique' => '{field} Yang diinputkan sudah ada'
             ]
@@ -38,7 +38,7 @@ class Pengurus extends BaseController
 
         $model = new ModelPengurus();
         $data = array (
-            'id_pengurus' =>$this->request->getPost('id'),
+            'id_kas_masuk' =>$this->request->getPost('id'),
             'nama_pengurus' =>$this->request->getPost('namapengurus'),
             'jabatan' =>$this->request->getPost('jabatan'),
             'alamat' =>$this->request->getPost('alamat'),

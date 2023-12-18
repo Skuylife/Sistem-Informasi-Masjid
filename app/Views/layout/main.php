@@ -1,3 +1,7 @@
+<?php
+
+use CodeIgniter\Images\Image;
+?>
 <!DOCTYPE html>
 <html>
 
@@ -63,6 +67,15 @@
                 <div class="text-center">
                     <a href="index.html" class="logo"><i class="mdi mdi-assistant"></i> SI Digital Masjid</a>
                     <!-- <a href="index.html" class="logo"><img src="<?= base_url() ?>/assets/images/logo.png" height="24" alt="logo"></a> -->
+                    <span>
+                        <h4>
+                            Selamat datang,
+                            <?= $u = (session()->get('username')); ?>
+                        </h4>
+                        <br>
+                        <img src="<?= base_url().'/gambar/'.$u.'.png' ?>"  height="100" width="100" class="img">
+                        <!-- <img src="<?= base_url() ?>/assets/images/user/bibl.png" height="140" alt="Habil"> -->
+                    </span>
                 </div>
             </div>
 
@@ -70,7 +83,7 @@
 
                 <div id="sidebar-menu">
                     <ul>
-                        <li class="menu-title">Main</li>
+                        <!-- <li class="menu-title">Main</li> -->
                         <?= $this->rendersection('menu') ?>
 
 
@@ -193,7 +206,7 @@
                                     <a class="dropdown-item" href="#"><span class="badge badge-success float-right">5</span><i class="mdi mdi-settings m-r-5 text-muted"></i> Settings</a>
                                     <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5 text-muted"></i> Lock screen</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    <a class="dropdown-item" href="<?= site_url('login/logout') ?>"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                                 </div>
                             </li>
 

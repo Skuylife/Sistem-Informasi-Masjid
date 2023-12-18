@@ -18,22 +18,22 @@ class Register extends BaseController
     public function save() 
     {
         $rules = [
-            'emailu' =>'required|valid_email|is_unique[tbl_user.email]',
+            'emailuser' =>'required|valid_email|is_unique[tbl_user.email]',
             'username' => 'required|min_length[3]',
-            'password' => 'required|min_length[6]',
+            'password' => 'required|min_length[3]',
             'confirmpassword' => 'matches[password]'
         ];
         if ($this->validate($rules)) {
             $model = new ModelUser();
             $data = [
                 'id_user' => $this->request->getPost('iduser'),
+                'email' => $this->request->getPost('emailuser'),
                 'nama_user' => $this->request->getPost('username'),
-                'email' => $this->request->getPost('emailu'),
-                'password' => password_hash($this->request->getVar('password'),PASSWORD_DEFAULT),
-                'level' => $this->request->getVar('level')
+                'password_user' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'level' => $this->request->getPost('level')
             ];
-            $model -> simpan($data);
-            return redirect()->to('/layout/index');
+            $model -> simpanUserbaru($data);
+            return redirect()->to('/login');
         }else{
             $data['validation']=$this->validator;
             echo view('registrasi/v_register',$data);
