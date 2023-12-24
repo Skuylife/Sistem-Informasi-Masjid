@@ -17,8 +17,33 @@ class Register extends BaseController
 
     public function save() 
     {
+
+        // if (!$this->validate([
+        //     'username' => [
+        //         'rules' => 'is_unique[tbl_user.nama_user]',
+        //         'errors' => [
+        //             'is_unique' => 'Username Yang diinputkan sudah ada'
+        //         ]
+        //     ]
+        // ])) {
+        //     session()->setFlashdata('error', $this->validator->listErrors());
+        //     return redirect()->back()->withInput();
+        // } else {
+        //     print_r($this->request->getVar());
+        // }
+        // $model = new ModelUser();
+        // $dataregis = [
+        //     'id_user' => $this->request->getVar('id-user'),
+        //     'email' => $this->request->getVar('email_user'),
+        //     'nama_user' => $this->request->getVar('username'),
+        //     'password_user' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+        //     'level' => $this->request->getVar('level')
+        // ];
+        // $model->Userbaru($dataregis);
+        // return redirect()->to('/login');
+
         $rules = [
-            'emailuser' =>'required|valid_email|is_unique[tbl_user.email]',
+            'email_user' => 'required|valid_email|is_unique[tbl_user.email]',
             'username' => 'required|min_length[3]',
             'password' => 'required|min_length[3]',
             'confirmpassword' => 'matches[password]'
@@ -26,13 +51,13 @@ class Register extends BaseController
         if ($this->validate($rules)) {
             $model = new ModelUser();
             $data = [
-                'id_user' => $this->request->getPost('iduser'),
-                'email' => $this->request->getPost('emailuser'),
-                'nama_user' => $this->request->getPost('username'),
+                'id_user' => $this->request->getVar('iduser'),
+                'nama_user' => $this->request->getVar('username'),
+                'email' => $this->request->getVar('email_user'),
                 'password_user' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
-                'level' => $this->request->getPost('level')
+                'level' => $this->request->getVar('level')
             ];
-            $model -> simpanUserbaru($data);
+            $model->Userbaru($data);
             return redirect()->to('/login');
         }else{
             $data['validation']=$this->validator;

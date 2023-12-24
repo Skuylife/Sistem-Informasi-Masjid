@@ -73,7 +73,7 @@ use CodeIgniter\Images\Image;
                             <?= $u = (session()->get('username')); ?>
                         </h4>
                         <br>
-                        <img src="<?= base_url().'/gambar/'.$u.'.png' ?>"  height="100" width="100" class="img">
+                        <img src="<?= base_url() . '/gambar/' . $u . '.png' ?>" height="100" width="100" class="img">
                         <!-- <img src="<?= base_url() ?>/assets/images/user/bibl.png" height="140" alt="Habil"> -->
                     </span>
                 </div>
@@ -194,7 +194,8 @@ use CodeIgniter\Images\Image;
 
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="<?= base_url() ?>/assets/images/users/Bibil.png" alt="user" class="rounded-circle">
+                                    <!-- <img src="<?= base_url() ?>/assets/images/users/Bibil.png" alt="user" class="rounded-circle"> -->
+                                    <img src="<?= base_url() . '/gambar/' . $u . '.png' ?>" alt="user" class="rounded-circle">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                     <!-- item-->

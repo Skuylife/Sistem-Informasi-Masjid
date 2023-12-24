@@ -1,5 +1,4 @@
 <?= $this->extend('layout/main') ?>
-
 <?= $this->section('menu') ?>
 
 <li>
@@ -10,7 +9,7 @@
 </li>
 <?php if (session()->get('level') == 1) { ?>
     <li class="has_sub">
-        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i> <span> Master </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i><span> Master </span><span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
         <ul class="list-unstyled">
             <li><a href="<?= site_url('Admin') ?>">Admin</a></li>
             <li><a href="<?= site_url('user') ?>">User</a></li>
@@ -20,9 +19,9 @@
         </ul>
     </li>
 <?php } ?>
-<?php if (session()->get('level') == 2) { ?>
+<?php if (session()->get('level') == 1 || session()->get('level') == 2) { ?>
     <li class="has_sub">
-        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i> <span> Transaksi </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cards-outline"></i> <span> Transaksi </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
         <ul class="list-unstyled">
             <li><a href="<?= site_url('kasmasuk') ?>">Kas Masuk</a></li>
             <li><a href="<?= site_url('') ?>">Uang Keluar</a></li>
@@ -30,9 +29,9 @@
         </ul>
     </li>
 <?php } ?>
-<?php if (session()->get('level') == 3) { ?>
+<?php if (session()->get('level') == 1 || session()->get('level') == 3) { ?>
     <li class="has_sub">
-        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i> <span> Pendanaan </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cards-outline"></i> <span> Pendanaan </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
         <ul class="list-unstyled">
             <li><a href="">Infak Masjid</a></li>
             <li><a href="<?= site_url('') ?>">Infak Anak Yatim</a></li>
@@ -41,9 +40,9 @@
         </ul>
     </li>
 <?php } ?>
-<?php if (session()->get('level') == 4) { ?>
+<?php if (session()->get('level') == 1 || session()->get('level') == 4) { ?>
     <li class="has_sub">
-        <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-layers"></i> <span> Laporan </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
+        <a href="javascript:void(0);" class="waves-effect"><i class=" mdi mdi-cards-outline"></i> <span> Laporan </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
         <ul class="list-unstyled">
             <li><a href="<?= site_url('') ?>">Laporan Uang Masuk</a></li>
             <li><a href="<?= site_url('') ?>">Laporan Uang Keluar</a></li>

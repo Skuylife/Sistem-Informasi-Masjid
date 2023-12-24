@@ -37,15 +37,15 @@
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control" type="hidden" name="iduser">
+                                <input class="form-control" type="hidden" name="id-user" id="id-user">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <input class="form-control <?= ($validation->hasError('emailu')) ? 'is_invalid' : ''; ?>" type="email" name="emailuser" placeholder="Email">
+                                <input class="form-control <?= ($validation->hasError('email_user')) ? 'is_invalid' : ''; ?>" type="email" name="email_user" id="email_user" placeholder="Email">
                                 <div class="invalid-feedback">
-                                    <?= $validation->getError('emailu') ?>
+                                    <?= $validation->getError('email_user') ?>
                                 </div>
                             </div>
                         </div>
@@ -70,11 +70,12 @@
 
                         <div class="form-group row">
                             <div class="col-12">
-                                <select name="level" id="level" class="form-control" >
+                                <select name="level" id="level" class="form-control level">
                                     <option value="">Level</option>
                                     <option value="1">Admin</option>
-                                    <option value="2">Donatur</option>
-                                    <option value="3">Bendahara</option>
+                                    <option value="2">Pengurus</option>
+                                    <option value="3">Donatur</option>
+                                    <option value="4">Pimpinan</option>
                                 </select>
                             </div>
                         </div>
@@ -101,7 +102,6 @@
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>

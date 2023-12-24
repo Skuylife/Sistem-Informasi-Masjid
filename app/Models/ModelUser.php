@@ -23,10 +23,9 @@ class ModelUser extends Model
         return $query;
     }
 
-    public function simpanUserbaru($data)
+    public function Userbaru($dataregis)
     {
-        $query = $this->db->table('tbl_user')->insert($data);
-        return $query;
+        $this->db->table('tbl_user')->insert($dataregis);
     }
 
     public function deleteUser($id)
