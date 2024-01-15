@@ -2,20 +2,19 @@
 
 namespace App\Controllers;
 
-use App\Models\ModelKasMasuk;
+use App\Models\ModelKaskeluar;
 use CodeIgniter\Validation\Rules as ValidationRules;
 use CodeIgniter\Validation\StrictRules\Rules;
 use PSpell\Config;
 
-class Kasmasuk extends BaseController
+class Kaskeluar extends BaseController
 {
     public function index()
     {
         session();
-        $model = new ModelKasMasuk();
-        $data['kasmasuk'] = $model->getKasmasuk()->getResultArray();
-        $data['data_donatur'] = $model->getDonatur()->getResult();
-        echo view('kasmasjid/v_kasmasuk', $data);
+        $model = new ModelKaskeluar();
+        $data['kaskeluar'] = $model->getKaskeluar()->getResultArray();
+        echo view('kasmasjid/v_kaskeluar', $data);
         $data = [
             'title' => "Tambah Data",
             'validation' => \Config\Services::validation()
@@ -25,58 +24,57 @@ class Kasmasuk extends BaseController
     public function save()
     {
 
-        $model = new ModelKasmasuk();
+        $model = new ModelKaskeluar();
         $data = array(
-            'id_kas_masjid' => $this->request->getPost('id'),
+            'id_kaskeluar' => $this->request->getPost('id'),
             'tanggal' => $this->request->getPost('tanggal'),
             'ket' => $this->request->getPost('ket'),
-            'kas_masuk' => $this->request->getPost('kasmasuk'),
+            'kas_keluar' => $this->request->getPost('kaskeluar'),
             'jenis_kas' => $this->request->getPost('jenis'),
-            'iddonaturmasjid' => $this->request->getPost('iddonatur')
         );
 
         $model->insertData($data);
-        return redirect()->to('/kasmasuk');
+        return redirect()->to('/Kaskeluar');
     }
 
     public function edit()
     {
-        $model = new ModelKasmasuk();
+        $model = new ModelKaskeluar();
         $id = $this->request->getPost('id');
         $data = [
             'tanggal' => $this->request->getPost('tanggal'),
             'ket' => $this->request->getPost('ket'),
-            'kas_masuk' => $this->request->getPost('kasmasuk'),
-            'jenis_kas' => $this->request->getPost('jenis')
+            'kas_keluar' => $this->request->getPost('Kaskeluar'),
+            'jenis_kas' => $this->request->getPost('jenis'),
         ];
 
         $model->updateData($data, $id);
-        return redirect()->to('/kasmasuk');
+        return redirect()->to('/Kaskeluar');
     }
 
     public function delete()
     {
-        $model = new ModelKasmasuk();
+        $model = new ModelKaskeluar();
         $id = $this->request->getPost('idk');
-        $model->deleteKasmasuk($id);
-        return redirect()->to('/Kasmasuk/index');
+        $model->deleteKaskeluar($id);
+        return redirect()->to('/Kaskeluar/index');
     }
 
-    public function laporankasmasuk()
+    public function laporankaskeluar()
     {
-        $model = new ModelKasMasuk();
-        $data['kasmasuk'] = $model->getLaporanKasMasuk()->getResultArray();
-        echo view('kasmasjid/laporankasmasuk', $data);
+        $model = new ModelKaskeluar();
+        $data['kaskeluar'] = $model->getLaporanKasKeluar()->getResultArray();
+        echo view('kasmasjid/laporankaskeluar', $data);
     }
 
     public function laporanperperiode()
     {
-        echo view('kasmasjid/vlaporankasmasuk');
+        echo view('kasmasjid/vlaporankaskeluar');
     }
 
     public function cetaklaporanperperiode()
     {
-        $model = new Modelkasmasuk();
+        $model = new ModelKaskeluar();
         $tgla = $this->request->getPost('tanggal_awal');
         $tglb = $this->request->getPost('tanggal_akhir');
         $query = $model->getLaporanperperiode($tgla, $tglb)->getResultArray();
@@ -85,17 +83,17 @@ class Kasmasuk extends BaseController
             'tglb' => $tglb,
             'data' => $query
         ];
-        echo view('kasmasjid/vcetaklaporanperperiode', $data);
+        echo view('kasmasjid/vcetaklaporanperperiodekk', $data);
     }
 
     public function laporanperperiodeperjeniskas()
     {
-        echo view('kasmasjid/vlaporanperjeniskas');
+        echo view('kasmasjid/vlaporanperjeniskaskk');
     }
 
     public function cetaklaporanperperiodeperjeniskas()
     {
-        $model = new Modelkasmasuk();
+        $model = new ModelKaskeluar();
         $tgla = $this->request->getPost('tanggal_awal');
         $tglb = $this->request->getPost('tanggal_akhir');
         $jenis = $this->request->getPost('jeniskas');
@@ -106,6 +104,6 @@ class Kasmasuk extends BaseController
             'jenis' => $jenis,
             'data' => $query
         ];
-        echo view('kasmasjid/v_cetaklaporanperperiodeperjeniskas', $data);
+        echo view('kasmasjid/v_cetaklaporanperperiodeperjeniskaskk', $data);
     }
 }

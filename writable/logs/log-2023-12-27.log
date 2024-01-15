@@ -1,0 +1,81 @@
+INFO - 2023-12-27 06:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-27 06:55:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_masjid_21200...', 3306, '', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelUser.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Login.php(20): App\Models\ModelUser->cek_login('habil')
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Login->ceklogin()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelUser.php(47): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Login.php(20): App\Models\ModelUser->cek_login('habil')
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Login->ceklogin()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#10 {main}
+CRITICAL - 2023-12-27 06:55:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `nama_user` = :nama_user:', [...], false)
+ 3 APPPATH\Models\ModelUser.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(20): App\Models\ModelUser->cek_login('habil')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Login->ceklogin()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2023-12-27 06:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 06:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 07:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 08:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

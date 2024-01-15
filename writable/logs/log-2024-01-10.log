@@ -1,0 +1,610 @@
+INFO - 2024-01-10 05:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 05:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 06:00:56 --> Undefined variable $Donatur
+in APPPATH\Views\donatur\v_donatur.php on line 56.
+ 1 APPPATH\Views\donatur\v_donatur.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Donatur', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\donatur\\v_donatur.php', 56)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\donatur\\v_donatur.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('donatur/v_donatur', [], true)
+ 5 APPPATH\Controllers\Donatur.php(17): view('donatur/v_donatur', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Donatur->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Donatur))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 06:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 06:09:03 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 06:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 06:14:10 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 06:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 06:36:41 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 06:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 06:36:43 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 06:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 06:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 06:50:34 --> mysqli_sql_exception: Not unique table/alias: 'tbl_kas_masjid' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_kas_...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_kas_...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_kas_...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2024-01-10 06:50:34 --> Not unique table/alias: 'tbl_kas_masjid'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_masjid`, `tanggal`, `ket`, `kas_masuk`, `jenis_kas`, `status`, `nama`
+FROM `tbl_kas_masjid`
+JOIN `tbl_kas_masjid` ON `tbl_kas_masjid`.`iddonaturmasjid` = `tbl_donatur`.`iddonatur`', [], false)
+ 2 APPPATH\Models\ModelKasMasuk.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 06:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 06:52:43 --> mysqli_sql_exception: Not unique table/alias: 'tbl_kas_masjid' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_kas_...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_kas_...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_kas_...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2024-01-10 06:52:43 --> Not unique table/alias: 'tbl_kas_masjid'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_masjid`, `tanggal`, `ket`, `kas_masuk`, `jenis_kas`, `status`, `nama`
+FROM `tbl_kas_masjid`
+JOIN `tbl_kas_masjid` ON `tbl_kas_masjid`.`iddonaturmasjid` = `tbl_donatur`.`iddonatur`', [], false)
+ 2 APPPATH\Models\ModelKasMasuk.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 07:18:42 --> mysqli_sql_exception: Unknown column 'Masuk' in 'where clause' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_kas_...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_kas_...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_kas_...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2024-01-10 07:18:42 --> Unknown column 'Masuk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_masjid`, `tanggal`, `ket`, `kas_masuk`, `jenis_kas`, `status`, `nama`
+FROM `tbl_kas_masjid`
+JOIN `tbl_donatur` ON `tbl_kas_masjid`.`iddonaturmasjid` = `tbl_donatur`.`iddonatur`
+WHERE `status` = Masuk', [], false)
+ 2 APPPATH\Models\ModelKasMasuk.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 07:19:40 --> mysqli_sql_exception: Unknown column 'status =' in 'field list' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_kas_...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_kas_...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_kas_...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2024-01-10 07:19:40 --> Unknown column 'status =' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_masjid`, `tanggal`, `ket`, `kas_masuk`, `jenis_kas`, `status =` `masuk`, `nama`
+FROM `tbl_kas_masjid`
+JOIN `tbl_donatur` ON `tbl_kas_masjid`.`iddonaturmasjid` = `tbl_donatur`.`iddonatur`', [], false)
+ 2 APPPATH\Models\ModelKasMasuk.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 07:19:54 --> mysqli_sql_exception: Unknown column 'status="masuk"' in 'field list' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id_kas_...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_kas_...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_kas_...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2024-01-10 07:19:54 --> Unknown column 'status="masuk"' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id_kas_masjid`, `tanggal`, `ket`, `kas_masuk`, `jenis_kas`, `status="masuk"`, `nama`
+FROM `tbl_kas_masjid`
+JOIN `tbl_donatur` ON `tbl_kas_masjid`.`iddonaturmasjid` = `tbl_donatur`.`iddonatur`', [], false)
+ 2 APPPATH\Models\ModelKasMasuk.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:20:20 --> Undefined variable $data_donatur
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 262.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_donatur', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 262)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 07:34:20 --> mysqli_sql_exception: Unknown column 'tgl' in 'field list' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tgl`, `...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tgl`, `...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tgl`, `...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tgl`, `...', Array, false)
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#11 {main}
+CRITICAL - 2024-01-10 07:34:20 --> Unknown column 'tgl' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tgl`, `ket`, `kas_masuk`, `jenis_kas`, `status`, `nama`
+FROM `tbl_kas_masjid`
+JOIN `tbl_donatur` ON `tbl_kas_masjid`.`iddonaturmasjid` = `tbl_donatur`.`iddonatur`
+WHERE `status` = "Masuk"', [], false)
+ 2 APPPATH\Models\ModelKasMasuk.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasmasuk.php(16): App\Models\ModelKasMasuk->getKasmasuk()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:38:52 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:39:12 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:42:31 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:43:12 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:50:43 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 58.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 07:53:02 --> Undefined array key "id_kas_masjid"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kas_masjid"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 07:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 07:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 08:05:17 --> Undefined array key "iddonatur"
+in APPPATH\Views\kasmasjid\v_kasmasuk.php on line 65.
+ 1 APPPATH\Views\kasmasjid\v_kasmasuk.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "iddonatur"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php', 65)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\v_kasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/v_kasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(18): view('kasmasjid/v_kasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-10 08:28:14 --> Undefined array key "nama"
+in APPPATH\Views\kasmasjid\laporankasmasuk.php on line 57.
+ 1 APPPATH\Views\kasmasjid\laporankasmasuk.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\laporankasmasuk.php', 57)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\laporankasmasuk.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/laporankasmasuk', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(71): view('kasmasjid/laporankasmasuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->laporankasmasuk()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-10 08:28:51 --> mysqli_sql_exception: Unknown column 'tbl_donatur.idonatur' in 'on clause' in C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_m...', 0)
+#1 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_m...')
+#2 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_m...')
+#3 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Models\ModelKasMasuk.php(47): CodeIgniter\Database\BaseConnection->query('select id_kas_m...')
+#4 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\app\Controllers\Kasmasuk.php(84): App\Models\ModelKasMasuk->getLaporanperperiode('2024-01-01', '2024-01-10')
+#5 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+#6 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\lenovo\OneDrive\Desktop\Sistem-Informasi-Masjid\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo...')
+#10 {main}
+CRITICAL - 2024-01-10 08:28:51 --> Unknown column 'tbl_donatur.idonatur' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasMasuk.php(47): CodeIgniter\Database\BaseConnection->query('select id_kas_masjid,tanggal,nama,ket,kas_masuk,jenis_kas,status from tbl_kas_masjid join tbl_donatur on tbl_kas_masjid.iddonaturmasjid=tbl_donatur.idonatur where tanggal >= \'2024-01-01\' and tanggal <= \'2024-01-10\' and status =\'masuk\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(84): App\Models\ModelKasMasuk->getLaporanperperiode('2024-01-01', '2024-01-10')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:29:12 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:29:12 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:29:44 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:29:44 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:35:54 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:35:54 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:37:03 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:37:03 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:37:47 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:37:47 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:38:09 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:38:09 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-10 08:38:33 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 30.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(30): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+WARNING - 2024-01-10 08:38:33 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php on line 32.
+ 1 APPPATH\Views\kasmasjid\vcetaklaporanperperiode.php(32): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\app\\Views\\kasmasjid\\vcetaklaporanperperiode.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('kasmasjid/vcetaklaporanperperiode', [], true)
+ 5 APPPATH\Controllers\Kasmasuk.php(90): view('kasmasjid/vcetaklaporanperperiode', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->cetaklaporanperperiode()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\lenovo\\OneDrive\\Desktop\\Sistem-Informasi-Masjid\\public\\index.php')
+INFO - 2024-01-10 08:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-10 08:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

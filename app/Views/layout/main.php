@@ -14,7 +14,7 @@ use CodeIgniter\Images\Image;
     <meta content="Mannatthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="<?= base_url() ?>/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="<?= base_url() ?>/assets/images/masjid.png">
 
     <link href="<?= base_url() ?>/assets/plugins/morris/morris.css" rel="stylesheet">
 
@@ -63,18 +63,17 @@ use CodeIgniter\Images\Image;
             </button>
 
             <!-- LOGO -->
-            <div class="topbar-left">
+            <div class="topbar-left"> 
                 <div class="text-center">
                     <a href="index.html" class="logo"><i class="mdi mdi-assistant"></i> SI Digital Masjid</a>
-                    <!-- <a href="index.html" class="logo"><img src="<?= base_url() ?>/assets/images/logo.png" height="24" alt="logo"></a> -->
+                    <!-- <a href="index.html" class="logo"><img src="<?= base_url() ?>/assets/images/masjid.png" height="24" alt="logo"></a> -->
                     <span>
-                        <h4>
+                        <h5>
                             Selamat datang,
                             <?= $u = (session()->get('username')); ?>
-                        </h4>
+                        </h5>
                         <br>
-                        <img src="<?= base_url() . '/gambar/' . $u . '.png' ?>" height="100" width="100" class="img">
-                        <!-- <img src="<?= base_url() ?>/assets/images/user/bibl.png" height="140" alt="Habil"> -->
+                        <img src="<?= base_url() . '/gambar/' . $u . '.png' ?>" height="80" width="80" class="img">
                     </span>
                 </div>
             </div>
@@ -85,7 +84,6 @@ use CodeIgniter\Images\Image;
                     <ul>
                         <!-- <li class="menu-title">Main</li> -->
                         <?= $this->rendersection('menu') ?>
-
 
                     </ul>
                 </div>
