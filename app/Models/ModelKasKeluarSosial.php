@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
-use WeakReference;
 
-class ModelKaskeluar extends Model
+class ModelKaskeluarSosial extends Model
 {
     public function getKaskeluar()
     {
@@ -14,26 +13,26 @@ class ModelKaskeluar extends Model
         $builder = $this->db->table('tbl_kas_keluar');
         $builder->select('id_kaskeluar,tanggal,idagenda,namakegiatan,ket,kas_keluar,jenis_kas');
         $builder->join('tbl_agenda', 'tbl_kas_keluar.idagenda = tbl_agenda.id_agenda');
-        $builder->where('jenis_kas = "Masjid"');
+        $builder->where('jenis_kas = "sosial"');
         return $builder->get();
     }
 
     public function getAgenda()
     {
-        $builder = $this->db->table('tbl_agenda')->where('namakegiatan like "%Masjid%" or "%masjid%" or "%MASJID%"');
+        $builder = $this->db->table('tbl_agenda')->where('namakegiatan like "%sosial%"');
         return $builder->get();
     }
 
-    public function getTotalKasMasukMasjid()
+    public function getTotalKasMasukSosial()
     {
-        $builder= $this->db->query('SELECT SUM(kas_masuk) AS totalmasuk FROM tbl_kas_masjid WHERE jenis_kas="Masjid"');
+        $builder = $this->db->query('SELECT SUM(kas_masuk) AS totalmasuk FROM tbl_kas_masjid WHERE jenis_kas="Sosial"');
         // $builder->where('jenis_kas="Masjid"');
         return $builder;
     }
 
-    public function getTotalKasKeluarMasjid()
+    public function getTotalKasKeluarSosial()
     {
-        $builder = $this->db->query('SELECT SUM(kas_keluar) AS totalkeluar FROM tbl_kas_keluar WHERE jenis_kas="Masjid"' );
+        $builder = $this->db->query('SELECT SUM(kas_keluar) AS totalkeluar FROM tbl_kas_keluar WHERE jenis_kas="Sosial"');
         return $builder;
     }
 

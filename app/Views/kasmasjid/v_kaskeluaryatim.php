@@ -23,7 +23,7 @@
             <div class="col-12">
                 <div class="card m-b-30">
                     <div class="card-header">
-                        <h4 class="mt-0 header-title">Data Kas Keluar Masjid</h4>
+                        <h4 class="mt-0 header-title">Data Kas Keluar Anak Yatim</h4>
                     </div>
                     <div class="card-body">
 
@@ -59,7 +59,7 @@
                                                     <td><?= $val['kas_keluar'] ?></td>
                                                     <?php $total += $val['kas_keluar'] ?>
                                                     <td>
-                                                        <button type="button" class="btn btn-outline-dark btn-sm btn-edit" data-id_kasm="<?= $val['id_kaskeluar']; ?>" data-tanggal="<?= $val['tanggal']; ?>" data-idagnd="<?= $val['idagenda']; ?>" data-nama="<?= $val['namakegiatan']; ?>" data-ket="<?= $val['ket']; ?>" data-kasmsk="<?= $val['kas_keluar']; ?>" data-jenisk="<?= $val['jenis_kas']; ?>">
+                                                        <button type="button" class="btn btn-outline-dark btn-sm btn-edit" data-id_kasm="<?= $val['id_kaskeluar']; ?>" data-tanggal="<?= $val['tanggal']; ?>" data-idagnd="<?= $val['idagenda']; ?>" data-nama="<?= $val['namakegiatan']; ?>" data-ket="<?= $val['ket']; ?>" data-kasmsk="<?= $val['kas_keluar']; ?>">
                                                             <i class=" fa fa-tags"></i>
                                                         </button>
                                                         <button type="button" class="btn btn-outline-danger btn-sm btn-delete" data-id_kasm="<?= $val['id_kaskeluar']; ?>">
@@ -85,7 +85,7 @@
 </div>
 
 <!-- Modal Tambah Data-->
-<form action="/kaskeluar/save" method="post" autocomplete="off">
+<form action="/kaskeluaryatim/save" method="post" autocomplete="off">
     <?php if (!empty(session()->getFlashdata('error'))) : ?>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <h4>Periksa data</h4>
@@ -101,7 +101,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Kas Keluar Anak Yatim</h1>
                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -112,12 +112,12 @@
                     <div class="col-md-10">
                         <?php
                         $masuk = 0;
-                        foreach ($masukmasjid as $val) {
+                        foreach ($masukyatim as $val) {
                             $masuk += $val['totalmasuk'];
                         }
 
                         $keluar = 0;
-                        foreach ($masjid as $val) {
+                        foreach ($yatim as $val) {
                             $keluar += $val['totalkeluar'];
                         }
 
@@ -141,13 +141,13 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>ID</label>
-                                    <input type="text" name="idagenda" readonly id="idagenda" class="form-control">
+                                    <input type="text" name="idagenda" readonly id="idagenda" class="form-control idagenda">
                                 </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label>Nama Agenda</label>
-                                    <input type="text" readonly id="nama" class="form-control">
+                                    <input type="text" readonly id="nama" class="form-control nama">
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
 <!-- end modal tambah data -->
 
 <!-- Modal edit Data-->
-<form action="/kaskeluar/edit" method="post" autocomplete="off">
+<form action="/kaskeluaryatim/edit" method="post" autocomplete="off">
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -226,14 +226,8 @@
                         <input type="text" class="form-control kaskeluar" name="kaskeluar" id="kaskeluar" required>
                     </div>
                     <div class="col-md-10">
-                        <label for="jenis"> Jenis Kas </label>
-                        <select name="jenis" id="jenis" class="form-control jenis">
-                            <option value="">Pilih Jenis Kas</option>
-                            <option value="anak yatim">Anak Yatim</option>
-                            <option value="tpq">TPQ</option>
-                            <option value="sosial">Sosial</option>
-                            <option value="masjid">Masjid</option>
-                        </select>
+                        <label for="sisa">Sisa Kas</label>
+                        <input type="text" class="form-control" name="sisa" id="sisa" value="<?= $sisakas ?? 0; ?>" readonly>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -247,7 +241,7 @@
 <!-- end modal edit data -->
 
 <!-- Modal Delete-->
-<form action="/kaskeluar/delete" method="post">
+<form action="/kaskeluaryatim/delete" method="post">
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -275,7 +269,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Data Agenda</h4>
+                    <h4 class="modal-title">Data Donatur</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -333,16 +327,13 @@
         const name = $(this).data('nama');
         const ket = $(this).data('ket');
         const km = $(this).data('kasmsk');
-        const jns = $(this).data('jenisk');
 
         $('.idkas').val(id);
         $('.tgl').val(tgl);
         $('.idagenda').val(agenda);
         $('.nama').val(name);
         $('.ket').val(ket);
-        $('.kaskeluar').val(km);
-        $('.jenis').val(jns).trigger('change');
-
+        $('.kaskeluar').val(km).trigger('change');
         $('#editModal').modal('show');
     });
 

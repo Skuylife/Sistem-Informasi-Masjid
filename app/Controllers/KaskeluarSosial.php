@@ -2,13 +2,12 @@
 
 namespace App\Controllers;
 
-use App\Models\ModelKaskeluar;
+use App\Models\ModelKaskeluarSosial;
 use CodeIgniter\Validation\Rules as ValidationRules;
 use CodeIgniter\Validation\StrictRules\Rules;
 use PSpell\Config;
-use tidy;
 
-class Kaskeluar extends BaseController
+class KaskeluarSosial extends BaseController
 {
     public function index()
     {
@@ -16,12 +15,13 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
+            session();
+            $model = new ModelKaskeluarSosial();
             $data['kaskeluar'] = $model->getKaskeluar()->getResultArray();
             $data['data_agenda'] = $model->getAgenda()->getResult();
-            $data['masukmasjid'] = $model->getTotalKasMasukMasjid()->getResultArray();
-            $data['masjid'] = $model->getTotalKasKeluarMasjid()->getResultArray();
-            echo view('kasmasjid/v_kaskeluar', $data);
+            $data['masuksosial'] = $model->getTotalKasMasukSosial()->getResultArray();
+            $data['sosial'] = $model->getTotalKasKeluarSosial()->getResultArray();
+            echo view('kasmasjid/v_kaskeluarsosial', $data);
             $data = [
                 'title' => "Tambah Data",
                 'validation' => \Config\Services::validation()
@@ -42,23 +42,23 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
             $jumlah = $this->request->getPost('kaskeluar');
             $sisakas = $this->request->getPost('sisa');
             if ($jumlah > $sisakas) {
                 echo "<script>alert('Dana Kurang'); window.location.href='/kaskeluar';</script>";
             } else {
+                $model = new ModelKaskeluarSosial();
                 $data = array(
                     'id_kaskeluar' => $this->request->getPost('id'),
                     'tanggal' => $this->request->getPost('tanggal'),
                     'ket' => $this->request->getPost('ket'),
                     'kas_keluar' => $this->request->getPost('kaskeluar'),
-                    'jenis_kas' => 'Masjid',
+                    'jenis_kas' => $this->request->getPost('jenis'),
                     'idagenda' => $this->request->getPost('idagenda'),
                 );
 
                 $model->insertData($data);
-                return redirect()->to('/Kaskeluar');
+                return redirect()->to('/Kaskeluarsosial');
             }
         } elseif ((session()->get('masuk') == true)
             and (session()->get('level') == 2)
@@ -76,18 +76,17 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
+            $model = new ModelKaskeluarSosial();
             $id = $this->request->getPost('id');
             $data = [
                 'tanggal' => $this->request->getPost('tanggal'),
                 'ket' => $this->request->getPost('ket'),
-                'kas_keluar' => $this->request->getPost('kaskeluar'),
-                'jenis_kas' => 'Masjid',
-                'idagenda' => $this->request->getPost('idagenda'),
+                'kas_keluar' => $this->request->getPost('Kaskeluar'),
+                'jenis_kas' => $this->request->getPost('jenis'),
             ];
 
             $model->updateData($data, $id);
-            return redirect()->to('/Kaskeluar');
+            return redirect()->to('/Kaskeluarsosial');
         } elseif ((session()->get('masuk') == true)
             and (session()->get('level') == 2)
             or (session()->get('level') == 4)
@@ -104,10 +103,10 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
+            $model = new ModelKaskeluarSosial();
             $id = $this->request->getPost('idk');
             $model->deleteKaskeluar($id);
-            return redirect()->to('/Kaskeluar/index');
+            return redirect()->to('/Kaskeluarsosial/index');
         } elseif ((session()->get('masuk') == true)
             and (session()->get('level') == 2)
             or (session()->get('level') == 4)
@@ -124,7 +123,7 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
+            $model = new ModelKaskeluarSosial();
             $data['kaskeluar'] = $model->getLaporanKasKeluar()->getResultArray();
             echo view('kasmasjid/laporankaskeluar', $data);
         } elseif ((session()->get('masuk') == true)
@@ -160,7 +159,7 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
+            $model = new ModelKaskeluarSosial();
             $tgla = $this->request->getPost('tanggal_awal');
             $tglb = $this->request->getPost('tanggal_akhir');
             $query = $model->getLaporanperperiode($tgla, $tglb)->getResultArray();
@@ -203,7 +202,7 @@ class Kaskeluar extends BaseController
             and (session()->get('level') == 1)
             or (session()->get('level') == 3)
         ) {
-            $model = new ModelKaskeluar();
+            $model = new ModelKaskeluarSosial();
             $tgla = $this->request->getPost('tanggal_awal');
             $tglb = $this->request->getPost('tanggal_akhir');
             $jenis = $this->request->getPost('jeniskas');

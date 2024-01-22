@@ -20,9 +20,11 @@
         <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cards-outline"></i> <span> Transaksi </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
         <ul class="list-unstyled">
             <li><a href="<?= site_url('kasmasuk') ?>">Kas Masuk</a></li>
-            <li><a href="<?= site_url('kaskeluar') ?>">Kas Keluar</a></li>
-            <li><a href="<?= site_url('agenda') ?>">Kegiatan</a></li>
-        </ul>
+            <!-- <li><a href="<?= site_url('') ?>">Infak Masjid</a></li>
+            <li><a href="<?= site_url('') ?>">Infak Anak Yatim</a></li>
+            <li><a href="<?= site_url('') ?>">Infak Duafa</a></li> -->
+            <li><a href="<?= site_url('') ?>">Upload Bukti</a></li>
+        </ul> 
     </li>
 <?php } ?>
 
@@ -31,10 +33,11 @@
     <li class="has_sub">
         <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cards-outline"></i> <span> Pendanaan </span> <span class="float-right"><i class="mdi mdi-chevron-right"></i></span></a>
         <ul class="list-unstyled">
-            <li><a href="<?= site_url('') ?>">Infak Masjid</a></li>
-            <li><a href="<?= site_url('') ?>">Infak Anak Yatim</a></li>
-            <li><a href="<?= site_url('') ?>">Infak Duafa</a></li>
-            <li><a href="<?= site_url('') ?>">Upload Bukti</a></li>
+            <li><a href="<?= site_url('kaskeluar') ?>">Kas Keluar Masjid</a></li>
+            <li><a href="<?= site_url('kaskeluaryatim') ?>">Kas Keluar Anak Yatim</a></li>
+            <li><a href="<?= site_url('kaskeluarsosial') ?>">Kas Keluar Sosial</a></li>
+            <li><a href="<?= site_url('kaskeluartpq') ?>">Kas Keluar TPQ</a></li>
+            <li><a href="<?= site_url('agenda') ?>">Kegiatan</a></li>
         </ul>
     </li>
 <?php } ?>

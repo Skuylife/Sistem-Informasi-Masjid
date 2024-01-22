@@ -23,7 +23,7 @@
             <div class="col-12">
                 <div class="card m-b-30">
                     <div class="card-header">
-                        <h4 class="mt-0 header-title">Data Kas Keluar Masjid</h4>
+                        <h4 class="mt-0 header-title">Data Kas Keluar TPQ</h4>
                     </div>
                     <div class="card-body">
 
@@ -43,6 +43,7 @@
                                                 <th>Nama Kegiatan</th>
                                                 <th>Keterangan</th>
                                                 <th>Kas Keluar</th>
+                                                <th>Jenis Kas</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -58,6 +59,7 @@
                                                     <td><?= $val['ket'] ?></td>
                                                     <td><?= $val['kas_keluar'] ?></td>
                                                     <?php $total += $val['kas_keluar'] ?>
+                                                    <td><?= $val['jenis_kas'] ?></td>
                                                     <td>
                                                         <button type="button" class="btn btn-outline-dark btn-sm btn-edit" data-id_kasm="<?= $val['id_kaskeluar']; ?>" data-tanggal="<?= $val['tanggal']; ?>" data-idagnd="<?= $val['idagenda']; ?>" data-nama="<?= $val['namakegiatan']; ?>" data-ket="<?= $val['ket']; ?>" data-kasmsk="<?= $val['kas_keluar']; ?>" data-jenisk="<?= $val['jenis_kas']; ?>">
                                                             <i class=" fa fa-tags"></i>
@@ -85,7 +87,7 @@
 </div>
 
 <!-- Modal Tambah Data-->
-<form action="/kaskeluar/save" method="post" autocomplete="off">
+<form action="/kaskeluartpq/save" method="post" autocomplete="off">
     <?php if (!empty(session()->getFlashdata('error'))) : ?>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <h4>Periksa data</h4>
@@ -112,19 +114,19 @@
                     <div class="col-md-10">
                         <?php
                         $masuk = 0;
-                        foreach ($masukmasjid as $val) {
+                        foreach ($masuktpq as $val) {
                             $masuk += $val['totalmasuk'];
                         }
 
                         $keluar = 0;
-                        foreach ($masjid as $val) {
+                        foreach ($tpq as $val) {
                             $keluar += $val['totalkeluar'];
                         }
 
                         $sisakas = $masuk - $keluar;
                         ?>
                     </div>
-
+                    
                     <div class="col-md-10">
                         <label for="tgl">Tanggal</label>
                         <input type="date" class="form-control" name="tanggal" id="tgl" required>
@@ -164,6 +166,7 @@
                     <div class="col-md-10">
                         <label for="sisa">Sisa Kas</label>
                         <input type="text" class="form-control" name="sisa" id="sisa" value="<?= $sisakas ?? 0; ?>" readonly>
+                        <input type="hidden" class="form-control" name="sisakas" id="sisakas" value="<?= $sisakas ?? 0; ?>">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -177,7 +180,7 @@
 <!-- end modal tambah data -->
 
 <!-- Modal edit Data-->
-<form action="/kaskeluar/edit" method="post" autocomplete="off">
+<form action="/kaskeluartpq/edit" method="post" autocomplete="off">
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -247,7 +250,7 @@
 <!-- end modal edit data -->
 
 <!-- Modal Delete-->
-<form action="/kaskeluar/delete" method="post">
+<form action="/kaskeluartpq/delete" method="post">
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -342,7 +345,6 @@
         $('.ket').val(ket);
         $('.kaskeluar').val(km);
         $('.jenis').val(jns).trigger('change');
-
         $('#editModal').modal('show');
     });
 
